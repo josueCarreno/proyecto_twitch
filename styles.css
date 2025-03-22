@@ -17,7 +17,7 @@
     width: 20px;
 }
 
-header nav ul{
+nav ul{
     width: 100%;
     height: 50px;
     position: fixed;
@@ -60,10 +60,49 @@ nav li{
     width: 40px;
 }
 
+main{
+    height: 100vh;
+    background-color: #0E0E10;
+}
+
+nav aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+    background-color: #1F1F23;
+}
+
 #publicidad{
     width: 100%;
-    height: 100px;
-    background-color: orange;
+    height: 65px;
+    background-color: #451093;
     position: sticky;
-    top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0;
+}
+
+#publicidad p{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#publicidad img{
+    width: 45px;
+}
+
+#publicidad button{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
 }
