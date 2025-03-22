@@ -1,0 +1,69 @@
+/* Reseteo del diseño página Web */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Pendiente agregar fuente de texto */
+}
+
+
+
+#logo{
+    width: 35px;
+    cursor: pointer;
+}
+
+.icons{
+    width: 20px;
+}
+
+header nav ul{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #18181B;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+    align-items: center;
+    z-index: 1;
+}
+
+nav li{
+    cursor: pointer;
+}
+
+#button-sign-in{
+    color: white;
+    background-color: #35353B;
+    cursor: pointer;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+#button-register{
+    color: white;
+    background-color: #772CE8;
+    cursor: pointer;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+#icon-user{
+    width: 40px;
+}
+
+#publicidad{
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    position: sticky;
+    top: 200px;
+}
