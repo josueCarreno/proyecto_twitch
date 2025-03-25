@@ -17,17 +17,23 @@
     width: 20px;
 }
 
-nav #navbar{
+nav{
     width: 100%;
     height: 50px;
     position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav #navbar{
+    width: 100%;
+    height: 50px;
     background-color: #18181B;
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 10px 0;
     align-items: center;
-    z-index: 1;
 }
 
 nav li{
@@ -61,8 +67,11 @@ nav li{
 }
 
 main{
-    height: 350px;
+    padding: 55px 0 0 55px;
+    height: 40vh;
+    width: 100%;
     background-color: #0E0E10;
+    position: relative;
 }
 
 
@@ -79,6 +88,7 @@ nav #left-aside{
     padding: 10px 10px;
     align-items: center;
     list-style: none;
+    z-index: 5;
 }
 
 #left-aside li:first-child:hover{
@@ -109,6 +119,7 @@ nav aside #icon-video-camera{
     bottom: 0;
     padding: 0 25px;
     gap: 10px;
+    z-index: 6;
 }
 
 #publicidad p{
@@ -130,25 +141,28 @@ nav aside #icon-video-camera{
 
 main div{
     display: flex;
-    top: 50px;
-    left: 50px;
-    position: absolute;
-    margin-top: 22px;;
+    top: 0;
+    left: 0;
+    position: relative;
+    /*margin-top: 22px;*/
+    width: 100%;
 }
 
 main div img{
     width: 100%;
-    height: 295px;
 }
 
 
-section{
+#seccion-principal{
     background-color: #0E0E10;
     display: flex;
     height: 100vh;
+    width: 100%;
+    /*position: relative;
+    z-index: 2;*/
 }
 
-section h2{
+#seccion-principal h2{
     color: #9C68EB;
-    font-size: 90px;
+    font-size: 20px;
 }
