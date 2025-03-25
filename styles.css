@@ -67,7 +67,7 @@ nav li{
 }
 
 main{
-    padding: 55px 0 0 55px;
+    padding: 70px 0 0 51px;
     height: 40vh;
     width: 100%;
     background-color: #0E0E10;
@@ -153,16 +153,53 @@ main div img{
 }
 
 
-#seccion-principal{
+#seccion-live{
     background-color: #0E0E10;
     display: flex;
     height: 100vh;
     width: 100%;
+    padding: 38px 30px 0 78px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
     /*position: relative;
     z-index: 2;*/
 }
 
-#seccion-principal h2{
-    color: #9C68EB;
-    font-size: 20px;
+#seccion-live h2{
+    color: #BF94FF;
+    font-size: 18px;
+}
+
+#seccion-live h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #A970FF;
+}
+
+.img-articles{
+    width: 100%;
+}
+
+.user-profile-articles{
+    width: 50px;
+    border-radius: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ancle-articles{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#first-ancle-section::after{
+    content: "💓";
+  }
+
+.ancle-articles:hover{
+    color: #9147FF;
 }
