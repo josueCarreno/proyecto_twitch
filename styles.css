@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    list-style: none;
 }
 
 
@@ -31,7 +32,6 @@ nav #navbar{
     background-color: #18181B;
     display: flex;
     justify-content: space-between;
-    list-style: none;
     padding: 10px 0;
     align-items: center;
 }
@@ -87,7 +87,6 @@ nav #left-aside{
     background-color: #1F1F23;
     padding: 10px 10px;
     align-items: center;
-    list-style: none;
     z-index: 5;
 }
 
@@ -182,7 +181,7 @@ main div img{
 }
 
 .user-profile-articles{
-    width: 50px;
+    height: 45px;
     border-radius: 50px;
 }
 
@@ -197,9 +196,55 @@ a{
 }
 
 #first-ancle-section::after{
-    content: "💓";
-  }
+    content: "👑";
+}
+
+#first-ancle-section::before{
+    content: "👑";
+}
 
 .ancle-articles:hover{
     color: #9147FF;
+}
+
+.user-name{
+    color: #A4A4AE;
+    font-size: 13px;
+}
+
+.category{
+    color: #A4A4AE;
+    font-size: 13px;
+}
+
+.category:hover{
+    color: #A970FF;
+}
+
+.verifed-icon{
+    width: 15px;
+}
+
+.button-label{
+    background-color: #2F2F35;
+    border-radius: 30px;
+    border: none;
+    padding: 2px 10px 2px 10px;
+    color: #9B9BA5;
+}
+
+.box-description{
+    display: flex;
+    gap: 10px;
+    padding-top: 4px;
+}
+
+.first-ancle{
+    
+}
+
+.box-description ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
