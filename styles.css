@@ -16,24 +16,30 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 15px;
+    padding: 0px 10px;
     background-color: black;
 }
 
 nav section{
-    background-color: red;
+    background-color: blue; 
+    display: flex;
+    gap: 15px;
+}
+
+nav section div{
+    background-color: #1F1F23;
 }
 
 nav section:nth-child(1){
-    width: 15%;
+    width: auto;
 }
 
 nav section:nth-child(2){
-    width: 55%;
+    width: auto;
 }
 
 nav section:nth-child(3){
-    width: 25%;
+    width: auto;
 }
 
 #logo{
@@ -45,7 +51,7 @@ nav section:nth-child(3){
     width: 20px;
 }
 
-/*nav #navbar{
+/*nav{
     width: 100%;
     height: 50px;
     background-color: #18181B;
@@ -95,6 +101,30 @@ main{
     z-index: 0;
 }
 
+
+#menu-desktop{
+    display: none;
+}
+
+#menu-desktop section:nth-child(1){
+    align-items: center;
+}
+
+#menu-desktop section:nth-child(1) h3{
+    color: white;
+    font-size: 13px;
+    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-weight: 500;
+}
+
+#menu-desktop section{
+    margin-bottom: 10px;
+}
+
+#menu-desktop #icon-flecha{
+    width: 15px;
+    cursor: pointer;
+}
 
 aside{
     display: flex;
@@ -151,8 +181,21 @@ aside section{
     font-size: 13px;
 }
 
+#left-aside{
+    display: none;
+}
+
 #left-aside li:first-child:hover{
     cursor: default;
+}
+
+#left-aside ul li{
+    margin: 5px 0px;
+}
+
+#left-aside ul li:nth-child(1){
+    transform: translate(20%, 0%);
+    margin-bottom: 8px;
 }
 
 #first-child{
@@ -230,7 +273,7 @@ main section:nth-child(1){
     position: relative;
     /*margin-top: 22px;*/
     width: 100%;
-    background-color: red;
+    background-color: crimson;
     min-height: 320px;
 }
 
@@ -509,13 +552,7 @@ main section:nth-child(5) div{
     main{
     padding: 55px 5px 0 245px;
     }
-    aside section:nth-child(1) h3{
-        display: block;
-    }
-    #icon-video-camera{
-        display: none;
-    }
-    aside section:nth-child(2) .mostrar-lista-datos .mostrar-conectados{
+    #menu-desktop{
         display: block;
     }
 }
@@ -558,6 +595,12 @@ main section:nth-child(5) div{
 
 @media only screen and (min-width: 1150px){
     #publicidad div:nth-child(1) #mostrar-parrafo-abajo{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #left-aside{
         display: block;
     }
 }
