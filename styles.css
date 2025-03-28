@@ -399,7 +399,7 @@ main #sections-videos div .videos{
     display: none;
 }
 
-.sections-videos div{
+main .sections-videos div{
     max-width: 380px; 
     max-height: 300px;
     display: flex;
@@ -525,8 +525,8 @@ a{
     gap: 5px;
 }*/
 
-main section:nth-child(4){
-    background-color: purple;
+main .categoria-1{
+    background-color: grey;
     display: grid;
     width: 100%;
     height: auto;
@@ -536,28 +536,75 @@ main section:nth-child(4){
     padding: 60px 20px;
 }
 
-main section:nth-child(4) div{
+main .categoria-1 div{
     width: 100%; 
     height: 50px;
-    background-color: green;
+    background-color: #5C16C5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-main section:nth-child(5){
-    background-color: skyblue;
+main .categoria-1 div:hover{
+    background-color: #583394;
+}
+
+main .categoria-1 div .nieto-categ-1{
+    padding-left: 15px;
+}
+
+main .categoria-1 div .nieto-categ-1 p{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main .categoria-1 div img{
+    width: 140px;
+    position: relative;
+    margin-right: 10px;
+    /*background-color: #35353B;*/
+}
+
+main .categoria-2{
+    background-color: coral;
     display: grid;
     width: 100%;
     height: auto;
-    min-height: 40vh;
+    min-height: 50vh;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
     /*background-color: rgb(194, 91, 91);*/
     padding: 60px 20px;
 }
 
-main section:nth-child(5) div{
+main .categoria-2 div{
     width: 100%; 
-    height: 165px;
+    height: 200px;
     background-color: orange;
+}
+
+main .categoria-2 div .info-categorias{
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+    gap: 4px;
+    height: auto;
+}
+
+
+main .categoria-2 div .info-categorias p{
+    color: #2D2D31;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+main .categoria-2 div .info-categorias div{
+    background-color: #583394;
+    height: auto;
 }
 
 .hide{
