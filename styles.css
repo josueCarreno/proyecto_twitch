@@ -3,11 +3,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
     list-style: none;
 }
 
-nav{
+#navbar-mobile{
     width: 100%;
     height: 50px;
     position: fixed;
@@ -16,30 +16,57 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10px;
-    background-color: black;
+    padding: 0px 2px 0px 10px;
+    background-color: #18181B;
 }
 
-nav section{
-    background-color: blue; 
+#icon-more-options{
+    width: 30px;
+    cursor: pointer;
+}
+
+#navbar-mobile section{
+    /*background-color: cadetblue;*/
     display: flex;
-    gap: 15px;
 }
 
-nav section div{
-    background-color: #1F1F23;
+#navbar-mobile section:nth-child(1){
+    gap: 30px;
 }
 
-nav section:nth-child(1){
+/*#navbar-mobile section div{
+    background-color: grey;
+}*/
+
+#navbar-mobile section:nth-child(1){
+    width: auto;
+    align-items: center;
+}
+
+#navbar-mobile section:nth-child(2){
     width: auto;
 }
 
-nav section:nth-child(2){
+#navbar-mobile section:nth-child(3){
     width: auto;
+    gap: 5px;
+    align-items: center;
 }
 
-nav section:nth-child(3){
-    width: auto;
+#navbar-mobile section div #p-explorar{
+    color: #EFEFF1;
+    font-size: 18px;
+    font-family: "Roobert","Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    cursor: pointer;
+}
+
+#navbar-mobile section div #p-explorar:hover{
+    color: #BF94FF;
+}
+
+
+#input-navbar{
+    max-width: 300px;
 }
 
 #logo{
@@ -49,6 +76,7 @@ nav section:nth-child(3){
 
 .icons{
     width: 20px;
+    cursor: pointer;
 }
 
 /*nav{
@@ -65,30 +93,29 @@ nav li{
     cursor: pointer;
 }
 
+.buttom-navbar{
+    cursor: pointer;
+    padding: 7px 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
 #button-sign-in{
     color: white;
     background-color: #35353B;
-    cursor: pointer;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 800;
+
 }
 
 #button-register{
     color: white;
     background-color: #772CE8;
-    cursor: pointer;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 800;
 }
 
 #icon-user{
-    width: 40px;
+    width: 30px;
+    cursor: pointer;
 }
 
 main{
@@ -113,7 +140,6 @@ main{
 #menu-desktop section:nth-child(1) h3{
     color: white;
     font-size: 13px;
-    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;;
     font-weight: 500;
 }
 
@@ -209,6 +235,7 @@ aside #icon-video-camera{
 .user-profile{
     border-radius: 50px;
     width: 30px;
+    cursor: pointer;
 }
 
 #publicidad{
@@ -345,14 +372,19 @@ main div img{
     width: 100%;
 }
 
-.sections-videos{
+main .sections-videos{
     display: grid;
     width: 100%;
     height: auto;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 10px;
+    gap: 20px;
     /*background-color: rgb(194, 91, 91);*/
     padding: 60px 20px;
+    position: relative;
+}
+
+main #sections-videos div .videos{
+    position: absolute;
 }
 
 .sections-videos div:nth-child(3){
@@ -369,10 +401,17 @@ main div img{
 
 .sections-videos div{
     max-width: 380px; 
-    height: 200px;
-    background-color: green;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: darkolivegreen;
 }
 
+main .sections-videos .identificador{
+    display: flex;
+    flex-direction: row;
+}
 
 #seccion-live{
     background-color: #0E0E10;
@@ -400,11 +439,14 @@ main div img{
 
 .img-articles{
     width: 100%;
+    height: 220px;
 }
 
 .user-profile-articles{
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 a{
@@ -424,6 +466,21 @@ a{
 #first-ancle-section::before{
     content: "👑";
 }
+
+#lista{
+    display: flex;
+    flex-direction: column;
+}
+
+#lista li:nth-child(1){
+    padding-bottom: 6px;
+}
+
+#lista li{
+    /*background-color: #451093;*/
+    padding-bottom: 2px;
+}
+
 
 .ancle-articles:hover{
     color: #9147FF;
@@ -455,7 +512,7 @@ a{
     color: #9B9BA5;
 }
 
-.box-description{
+/*.box-description{
     display: flex;
     gap: 10px;
     padding-top: 4px;
@@ -466,7 +523,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
+}*/
 
 main section:nth-child(4){
     background-color: purple;
@@ -602,5 +659,22 @@ main section:nth-child(5) div{
 @media only screen and (max-width: 1200px){
     #left-aside{
         display: block;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #navbar-mobile section:nth-child(2) input{
+        display: block;
+    }
+    #p-explorar{
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #navbar-mobile section:nth-child(1) div:nth-child(2) img{
+        display: none;
     }
 }
