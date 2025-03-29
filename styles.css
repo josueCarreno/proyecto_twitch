@@ -414,6 +414,45 @@ main .sections-videos .identificador{
     flex-direction: row;
 }
 
+main .linea-mas-info{
+    /*background-color: cadetblue;*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+main  .linea-mas-info article{
+    background-color: #0E0E10;
+    display: flex;
+}
+
+main .linea-mas-info .rayita{
+    flex-direction: column;
+    justify-content: center;
+    color: #2F2F35;
+    width: 100%;
+}
+
+main .linea-mas-info article:nth-child(2){
+    color: #BF94FF;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+main .linea-mas-info article:nth-child(2):hover{
+    cursor: pointer;
+    color: #D0D0D1;
+    background-color: #2F2F35;
+}
+
+/*main .linea-mas-info article:nth-child(3){
+    width: 35%;
+}*/
+
 #seccion-live{
     background-color: #0E0E10;
     display: flex;
