@@ -10,27 +10,43 @@
 <body>
     <nav id="navbar-mobile">
         <section>
-            <div>
+            <div id="div-logo">
                 <img id="logo" src="https://static.vecteezy.com/system/resources/thumbnails/023/986/749/small/twitch-logo-twitch-logo-transparent-twitch-icon-transparent-free-free-png.png" alt="logo">
             </div>
-            <div>
-                <p class="hide" id="p-explorar">Explorar</p>
-                <img id="explorer" class="icons" src="images/files.png" alt="explorer">
+            <div id="div-explorer">
+                <!--<p class="hide" id="p-explorar">Explorar</p>-->
+                    <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScSvg-sc-1hrsqw6-1 ihOSMR"><g><path d="M5 2a2 2 0 00-2 2v8a2 2 0 002 2V4h8a2 2 0 00-2-2H5z"></path><path fill-rule="evenodd" d="M7 8a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H9a2 2 0 01-2-2V8zm2 0h6v8H9V8z" clip-rule="evenodd"></path></g></svg>
             </div>
-            <div>
+            <div id="div-3-puntos">
                 <img id="icon-more-options" src="images/ui.png" alt="more-options">
             </div>
         </section>
-        <section>
-                <input id="input-navbar" class="hide" type="text">
-                <img class="icons" src="https://static-00.iconduck.com/assets.00/search-icon-2044x2048-psdrpqwp.png" alt="">
+        <section class="hide">
+                <!--<input id="input-navbar" class="hide" type="text">-->
+                <!--<svg width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" data-a-selector="tw-core-button-icon" class="ScIconSVG-sc-1q25cff-1 jpczqG"><g><path fill-rule="evenodd" d="M13.192 14.606a7 7 0 111.414-1.414l3.101 3.1-1.414 1.415-3.1-3.1zM14 9A5 5 0 114 9a5 5 0 0110 0z" clip-rule="evenodd"></path></g></svg>-->
         </section>
         <section>
-            <img class="icons" src="https://flaticons.net/icon.php?slug_category=miscellaneous&slug_icon=crown-queen" alt="crown">
-            <button id="button-sign-in" class="buttom-navbar
-            ">Iniciar sesión</button>
-            <button id="button-register" class="buttom-navbar">Registrarse</button>
-            <img id="icon-user" src="https://static.vecteezy.com/system/resources/thumbnails/014/396/452/small_2x/comic-style-user-icon-with-transparent-background-file-png.png" alt="User">
+            <div id="div-lupita">
+                <img id="lupita" src="https://static-00.iconduck.com/assets.00/search-icon-2044x2048-psdrpqwp.png" alt="">
+            </div>
+            <img id="coronita" src="https://flaticons.net/icon.php?slug_category=miscellaneous&slug_icon=crown-queen" alt="crown">
+            <div id="div-derecho">
+                <div id="cajita-boton">
+                    <button id="button-sign-in" class="buttom-navbar">
+                        <div class="separacion-lados">
+                            <div>Iniciar sesión</div>
+                        </div>
+                    </button>
+                </div>
+                <div id="">
+                    <button id="cajita-boton-2" class="buttom-navbar">
+                        <div class="separacion-lados">
+                            <div>Registrarse</div>
+                        </div>
+                    </button>
+                </div>
+                <img id="icon-user" src="https://static.vecteezy.com/system/resources/thumbnails/014/396/452/small_2x/comic-style-user-icon-with-transparent-background-file-png.png" alt="User">
+            </div>
         </section>
     </nav>
 
@@ -268,12 +284,12 @@
 
     <main>
         <section class="en-directo">
-            <div id="directo-1" class="caja-en-directo-1">
+            <div id="directo-1-ancho" class="caja-en-directo-1 imagen">
                 <!-- Directo -->
                 <div id="imagen-en-directo">
                     <img src="https://sm.ign.com/t/ign_es/gallery/b/baldurs-ga/baldurs-gate-3-gameplay-screenshots_69vz.1200.png" alt="">
                 </div>
-                <div id="info-en-directo">
+                <div id="info-en-directo" class="hide"><!-- clas hide -->
                     <div id="info-1">
                         <div>
                             <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/791ac228-58c4-4700-beed-86e48132d554-profile_image-150x150.png" alt="">
@@ -291,10 +307,22 @@
                     </div>
                 </div>
             </div>
-            <div id="directo-2" class="caja-en-directo">Directo2</div>
-            <div id="directo-3" class="caja-en-directo">Directo3</div>
-            <div id="directo-4" class="caja-en-directo">Directo4</div>
-            <div id="directo-5" class="caja-en-directo">Directo5</div>
+            <div id="directo-2" class="caja-en-directo imagen">
+                <!--Directo2-->
+                <img src="https://sm.ign.com/t/ign_es/gallery/b/baldurs-ga/baldurs-gate-3-gameplay-screenshots_69vz.1200.png" alt="">
+            </div>
+            <div id="directo-3" class="caja-en-directo imagen">
+                <!--Directo3-->
+                <img src="https://sm.ign.com/t/ign_es/gallery/b/baldurs-ga/baldurs-gate-3-gameplay-screenshots_69vz.1200.png" alt="">
+            </div>
+            <div id="directo-4" class="caja-en-directo imagen">
+                <!--<Directo4-->
+                <img src="https://sm.ign.com/t/ign_es/gallery/b/baldurs-ga/baldurs-gate-3-gameplay-screenshots_69vz.1200.png" alt="">
+            </div>
+            <div id="directo-5" class="caja-en-directo imagen">
+                <!--Directo5-->
+                <img src="https://sm.ign.com/t/ign_es/gallery/b/baldurs-ga/baldurs-gate-3-gameplay-screenshots_69vz.1200.png" alt="">
+            </div>
         </section>        
         <div class="subtitulo-secciones">
             <span>En directo en Twitch</span>
@@ -657,7 +685,7 @@
                 </div>                
             </div>
             <div class="hide">
-                <img src="https://static-cdn.jtvnw.net/ttv-boxart/18122-188x250.jpg" alt="">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/1584836809_IGDB-188x250.jpg" alt="">
                 <div class="info-categorias">
                     <a href="" class="ancle-articles">World of Warcraft</a>
                     <p>
