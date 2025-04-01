@@ -62,6 +62,8 @@
 #navbar-mobile section:nth-child(3){
     width: auto;
     align-items: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #navbar-mobile section:nth-child(3) #div-lupita{
@@ -206,19 +208,25 @@
 }
 
 #navbar-mobile #seccion-2-navbar #div-padre-input{
-    /*background-color: deepskyblue;*/
-    background-color: #18181B;
+    background-color: deepskyblue;
+    /*background-color: #18181B;*/
     display: flex;
     align-items: center;
     height: 100%;
+    min-width: 293.44px;
+    justify-content: center;
+    width: 100%;
 }
 
 #navbar-mobile #seccion-2-navbar #div-padre-input #div-hijo-input{
     padding: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 46px;
-    /*background-color: #D0D0D1;*/
+    background-color: #D0D0D1;
+    min-width: 253.44px;
+    width: 42%;
 }
 
 #navbar-mobile #seccion-2-navbar #div-padre-input #div-hijo-input input::placeholder{
@@ -234,17 +242,27 @@
     border-radius: 5px 0px 0px 5px;
     border: 1px solid #67676B;
     height: 36px;
+    min-width: 209.44px;
+    width: 100%;
 }
 
-#navbar-mobile #seccion-2-navbar #div-padre-input #div-hijo-input input #buttom-lupita{
-    background-color: #451093;
+#navbar-mobile #seccion-2-navbar #div-padre-input #div-hijo-input #buttom-lupita{
+    background-color: #53535f61;
     width: 34px;
     height: 36px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
 }
 
-#navbar-mobile #seccion-2-navbar #div-padre-input #div-hijo-input input button div{
+#navbar-mobile #seccion-2-navbar #div-padre-input #div-hijo-input #buttom-lupita #cajita-lupita{
     height: 24px;
-    width: 100%;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar-mobile #seccion-2-navbar #div-padre-input #div-hijo-input #buttom-lupita:hover{
+    cursor: no-drop;
 }
 
 /*nav{
@@ -1066,6 +1084,12 @@ main  .info-categorias .boton-estilo span{
     #navbar-mobile #seccion-2-navbar svg{
         display: block;
     }
+    #navbar-mobile #seccion-2-navbar input{
+        display: block;
+    }
+    #navbar-mobile #seccion-2-navbar button{
+        display: block;
+    }
     #p-explorar{
         display: block;
         font-size: 14px;
@@ -1073,6 +1097,15 @@ main  .info-categorias .boton-estilo span{
     }
     #navbar-mobile section:nth-child(3) #div-lupita{
         display: none;
+    }
+    #navbar-mobile section:nth-child(1){
+        width: 20.5%;
+    }
+    #navbar-mobile section:nth-child(2){
+        width: 59%;
+    }
+    #navbar-mobile section:nth-child(3){
+        width: 20.5%;
     }
 }
 
