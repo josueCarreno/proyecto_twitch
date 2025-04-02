@@ -679,13 +679,25 @@ main #sections-videos div .videos{
     display: none;
 }
 
-main .sections-videos div{
+main .sections-videos .caja-videos{
     max-width: 380px; 
     max-height: 300px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     /*background-color: darkolivegreen;*/
+}
+
+main .sections-videos .caja-videos .contenedor-img-directos{
+    position: relative;
+}
+
+main .sections-videos .caja-videos .contenedor-img-directos img{
+    position: absolute;
+}
+
+main .sections-videos .caja-videos .contenedor-img-directos img:hover{
+    
 }
 
 main .sections-videos .identificador{
@@ -928,7 +940,7 @@ main .categoria-2{
     display: grid;
     width: 100%;
     height: auto;
-    min-height: 50vh;
+    min-height: 45vh;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
     /*background-color: rgb(194, 91, 91);*/
@@ -936,11 +948,12 @@ main .categoria-2{
 }
 
 main .categoria-2 .contenedor-categoria-2{
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     position: relative;
     height: auto;
-    background-color: aqua;
+    /*background-color: aqua;*/
+    padding-bottom: 20px;
 }
 
 /*main .categoria-2 .contenedor-categoria-2{
@@ -983,6 +996,13 @@ main .contenedor-categoria-2 .contenedor-boton-categoria-2{
     /*background-color: #451093;*/
     display: flex;
     margin-top: 6px;
+    gap: 5px;
+}
+
+main .contenedor-categoria-2 .contenedor-boton-categoria-2 span{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
 
 .separador-boton-categoria2{
