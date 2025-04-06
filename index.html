@@ -18,13 +18,13 @@
                 <svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScSvg-sc-1hrsqw6-1 ihOSMR"><g><path d="M5 2a2 2 0 00-2 2v8a2 2 0 002 2V4h8a2 2 0 00-2-2H5z"></path><path fill-rule="evenodd" d="M7 8a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H9a2 2 0 01-2-2V8zm2 0h6v8H9V8z" clip-rule="evenodd"></path></g></svg>
             </div>
             <div id="div-3-puntos">
-                <img id="icon-more-options" src="images/ui.png" alt="more-options">
+                <img class="sombrear" id="icon-more-options" src="images/ui.png" alt="more-options">
             </div>
         </section>
         <section id="seccion-2-navbar" class="hide">
             <div id="div-padre-input">
                 <div id="div-hijo-input">
-                    <input class="hide" type="text" placeholder="Buscar">
+                    <input id="input-navbar" class="hide" type="text" placeholder="Buscar">
                     <button class="hide" id="buttom-lupita">
                         <div id="cajita-lupita">
                             <svg class="hide" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" data-a-selector="tw-core-button-icon" class="ScIconSVG-sc-1q25cff-1 jpczqG"><g><path fill-rule="evenodd" d="M13.192 14.606a7 7 0 111.414-1.414l3.101 3.1-1.414 1.415-3.1-3.1zM14 9A5 5 0 114 9a5 5 0 0110 0z" clip-rule="evenodd"></path></g></svg>
@@ -37,7 +37,9 @@
             <div id="div-lupita">
                 <img id="lupita" src="https://static-00.iconduck.com/assets.00/search-icon-2044x2048-psdrpqwp.png" alt="">
             </div>
-            <img id="coronita" src="https://flaticons.net/icon.php?slug_category=miscellaneous&slug_icon=crown-queen" alt="crown">
+            <div id="div-coronita">
+                <img class="sombrear" id="coronita" src="https://flaticons.net/icon.php?slug_category=miscellaneous&slug_icon=crown-queen" alt="crown">
+            </div>
             <div id="div-derecho">
                 <div id="cajita-boton">
                     <button id="button-sign-in" class="buttom-navbar">
@@ -54,11 +56,13 @@
                     </button>
                 </div>
                 <div id="icono-usuario">
-                    <img id="icon-user" src="https://static.vecteezy.com/system/resources/thumbnails/014/396/452/small_2x/comic-style-user-icon-with-transparent-background-file-png.png" alt="User">
+                    <img class="sombrear" id="icon-user" src="https://static.vecteezy.com/system/resources/thumbnails/014/396/452/small_2x/comic-style-user-icon-with-transparent-background-file-png.png" alt="User">
                 </div>
             </div>
         </section>
     </nav>
+    <input type="checkbox" name="menu-mobile" id="menu-mobile">
+
 
         <!--<ul id="navbar">
             <li><img id="logo" src="https://static.vecteezy.com/system/resources/thumbnails/023/986/749/small/twitch-logo-twitch-logo-transparent-twitch-icon-transparent-free-free-png.png" alt="logo"></li>
@@ -71,14 +75,16 @@
             <li><img id="icon-user" src="https://static.vecteezy.com/system/resources/thumbnails/014/396/452/small_2x/comic-style-user-icon-with-transparent-background-file-png.png" alt="User"></li>
         </ul>-->
 
-        <aside id="menu-desktop">
 
+        <aside id="menu-desktop" class="hide">
             <section>
                 <div>
                     <h3>CANALES EN DIRECTO</h3>
                 </div>
                 <div>
-                    <img id="icon-flecha" src="images/flecha-izquierda .png" alt="">
+                    <label id="menu" for="menu-mobile">
+                        <img class="icon-flecha" src="images/flecha-izquierda .png" alt="">
+                    </label>
                 </div>
                 <!--<img id="icon-video-camera" src="images/camara-de-video.png" alt="">-->
             </section>
@@ -256,6 +262,11 @@
         
         <aside id="left-aside">
             <ul >
+                <li class="hide" id="flecha-mobile">
+                    <label id="menu" for="menu-mobile">
+                        <img class="icon-flecha rotacion" src="images/flecha-izquierda .png" alt="">
+                    </label>
+                </li>
                 <li>
                     <img id="icon-video-camera" src="images/camara-de-video.png" alt="">
                 </li>
